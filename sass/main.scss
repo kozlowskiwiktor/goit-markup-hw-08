@@ -1,0 +1,21 @@
+@use "./utils/variables" as *;
+
+@import "./utils/reset";
+@import "./utils/backdrop";
+@import "./utils/is-hidden";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/slider";
+@import "./components/section";
+@import "./components/services";
+@import "./components/features";
+@import "./components/box-gray";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/filter";
+@import "./components/project";
+@import "./components/modal";
+@import "./components/_newsletter.scss";

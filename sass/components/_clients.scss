@@ -1,0 +1,27 @@
+.client {
+    padding-top: 94px;
+}
+
+.client__box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+
+    &:hover, &:focus {
+            fill: $main-color;
+            border-color: $main-color;
+            cursor: pointer;
+            transition: fill 250ms $cubic-bezier,
+                border-color 250ms $cubic-bezier;
+        }
+}

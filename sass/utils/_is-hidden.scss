@@ -1,0 +1,4 @@
+.is-hidden {
+    transform: scale(0);
+    transition: 250ms $cubic-bezier;
+}

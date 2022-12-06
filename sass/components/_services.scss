@@ -1,3 +1,8 @@
+.services {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+
 .services__img {
     position: relative;
 }
@@ -17,7 +22,8 @@
     padding-block: 27px;
 }
 
-.services {
+.services__list {
     display: flex;
     align-items: flex-start;
+}
 }

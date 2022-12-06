@@ -20,6 +20,17 @@
   <body>
     <header class="page-header">
       <div class="page-width navigation navigation--bold">
+             <button
+          class="m-menu-btn"
+          type="button"
+          data-menu-open
+        >
+          <svg
+            width="40"
+            height="40">
+            <use href="./images/icons.svg#icon-m-menu"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <a
             class="logo logo--black"
@@ -113,10 +124,10 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section services">
         <div class="page-width">
           <h2 class="section__header section__header--bold">Czym się zajmujemy</h2>
-          <ul class="box services list">
+          <ul class="box services__list list">
             <li class="services__img">
               <img
                 src="./images/Budowanie_stron_UX.jpg"
@@ -436,6 +447,23 @@
           </button>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="m-menu__btn-close" type="button" data-menu-close>
+        <svg class="m-menu__icon-close"
+          width="40"
+          height="40"
+        ><use xlink:href="./images/icons.svg#icon-m-close"></use>
+  
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Agencja</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Kontakt</a></li>
+      </ul>
+    </div>
+    <script defer src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>

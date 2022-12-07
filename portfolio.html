@@ -19,27 +19,106 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-width navigation navigation--bold">
+      <div class="m-menu__overlay" data-menu>
+      <div class="m-menu">
         <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
+          class="m-menu__btn-close"
+          type="button"
+          data-menu-close
         >
           <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+            class="m-menu__icon-close"
+            width="40"
+            height="40"
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+            <use
+              href="./images/icons.svg#icon-m-close"
+            ></use>
           </svg>
         </button>
-        <nav class="navigation">
+        <ul class="m-menu__list-nav">
+          <li class="m-menu__item-nav">
+            <a
+              class="m-menu__link-nav"
+              href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="m-menu__item-nav">
+            <a
+              class="m-menu__link-nav m-menu__link-nav--active"
+              href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="m-menu__item-nav">
+            <a class="m-menu__link-nav" href="#"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <ul class="m-menu__list-contact">
+          <li class="m-menu__list-contact-tel">
+            <a
+              class="m-menu__link-contact-tel"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="m-menu__list-contact-mailto">
+            <a
+              class="m-menu__link-contact-mailto"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="m-menu__list-social">
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="page-width navigation navigation--bold">
+        <nav class="navigation__logo">
           <a
             class="logo logo--black"
             role="button"
@@ -53,6 +132,17 @@
             <li>Kontakt</li>
           </ul>
         </nav>
+        <button
+          class="m-menu-btn"
+          type="button"
+          data-menu-open
+        >
+          <svg class="m-menu-btn__icon"
+            width="40"
+            height="40">
+            <use href="./images/icons.svg#icon-m-menu"></use>
+          </svg>
+        </button>
         <ul class="navigation__contact list">
           <li>
             <a class="link navigation__contact--font" href="mailto:info@devstudio.com"
@@ -71,7 +161,7 @@
         </ul>
       </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper page-width">
       <div class="section box-filter">
         <button class="box-filter__btn" type="button">Wszystkie</button>
         <button class="box-filter__btn" type="button">Strony</button>
@@ -80,9 +170,9 @@
         <button class="box-filter__btn" type="button">Marketing</button>
       </div>
       <div class="section">
-        <div class="page-width project"">
+        <div class="project"">
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/technocrack.jpg"
             alt="Strona internetowa Technocrack"
             width="370"
@@ -96,7 +186,7 @@
           <p class="project__description">Strona internetowa</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/new_orlean.jpg"
             alt="Dizajn Grafika New Orlean vs Golden Star"
             width="370"
@@ -109,7 +199,7 @@
           <p class="project__description">Dizajn</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/restauracja_seafood.jpg"
             alt="Aplikacja Reastauracja Seafood"
             width="370"
@@ -122,7 +212,7 @@
           <p class="project__description">Aplikacja</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/projekt_prime.jpg"
             alt="Marketing Projekt Prime"
             width="370"
@@ -135,7 +225,7 @@
           <p class="project__description">Marketing</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/projekt_boxes.jpg"
             alt="Aplikacja Projekt Boxes"
             width="370"
@@ -148,7 +238,7 @@
           <p class="project__description">Aplikacja</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/inspiration.jpg"
             alt="Strona Internetowa Inspiration has no Borders"
             width="370"
@@ -161,7 +251,7 @@
           <p class="project__description">Strona internetowa</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/magazyn.jpg"
             alt="Dizajn Magazyn Limited Edition"
             width="370"
@@ -174,7 +264,7 @@
           <p class="project__description">Dizajn</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/projekt_lab.jpg"
             alt="Marketing Projekt LAB"
             width="370"
@@ -187,7 +277,7 @@
           <p class="project__description">Marketing</p>
         </div>
         <div class="project__item">
-          <img
+          <img class="project__image"
             src="./images/growing_business.jpg"
             alt="Aplikacja Growing Business"
             width="370"
@@ -204,19 +294,20 @@
     </main>
     <footer class="footer">
       <div class="page-width footer__inner">
-        <div>
+        <div class="footer-contacts">
+          <ul class="list">
+            <li class="footer-contacts__item">
           <a class="logo footer__logo" href="/" title="Strona główna"
             ><span class="logo__name--blue">Web</span>Studio</a
-          >
+          ></li>
           <address>
-            <ul class="list">
-              <li class="address">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
+              <li class="footer-contacts__item address">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer-contacts__item">
                 <a class="footer__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="footer-contacts__item">
                 <a class="footer__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
@@ -226,7 +317,7 @@
         </div>
         <div class="footer__sm footer__sm--margin-left">
           <p class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold">Dołącz do nas</p>
-          <div class="box__sm footer__sm--gap">
+          <div class="footer__sm-icons">
             <a class="icon__sm icon__sm--fill">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -251,7 +342,8 @@
         </div>
         <form>
           <div class="newsletter">
-            <label class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold"">Zapisz się do newslettera<input
+            <p class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold"">Zapisz się do newslettera</p>
+            <label class="newsletter__label"><input
               class="input"
               type="mail"
               name="mail"
@@ -265,35 +357,7 @@
         </form>
       </div>
     </footer>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
-      </ul>
     </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
     <script defer src="./mobile-menu.js"></script>
      </body>
 </html>

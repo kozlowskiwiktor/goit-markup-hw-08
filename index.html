@@ -19,19 +19,106 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-width navigation navigation--bold">
-             <button
-          class="m-menu-btn"
+      <div class="m-menu__overlay" data-menu>
+      <div class="m-menu">
+        <button
+          class="m-menu__btn-close"
           type="button"
-          data-menu-open
+          data-menu-close
         >
           <svg
+            class="m-menu__icon-close"
             width="40"
-            height="40">
-            <use href="./images/icons.svg#icon-m-menu"></use>
+            height="40"
+          >
+            <use
+              href="./images/icons.svg#icon-m-close"
+            ></use>
           </svg>
         </button>
-        <nav class="navigation">
+        <ul class="m-menu__list-nav">
+          <li class="m-menu__item-nav">
+            <a
+              class="m-menu__link-nav m-menu__link-nav--active"
+              href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="m-menu__item-nav">
+            <a
+              class="m-menu__link-nav"
+              href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="m-menu__item-nav">
+            <a class="m-menu__link-nav" href="#"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <ul class="m-menu__list-contact">
+          <li class="m-menu__list-contact-tel">
+            <a
+              class="m-menu__link-contact-tel"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="m-menu__list-contact-mailto">
+            <a
+              class="m-menu__link-contact-mailto"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="m-menu__list-social">
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="m-menu__item-social">
+            <a
+              class="m-menu__link-social"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label="linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="page-width navigation navigation--bold">
+        <nav class="navigation__logo">
           <a
             class="logo logo--black"
             role="button"
@@ -45,6 +132,17 @@
             <li>Kontakt</li>
           </ul>
         </nav>
+        <button
+          class="m-menu-btn"
+          type="button"
+          data-menu-open
+        >
+          <svg class="m-menu-btn__icon"
+            width="40"
+            height="40">
+            <use href="./images/icons.svg#icon-m-menu"></use>
+          </svg>
+        </button>
         <ul class="navigation__contact list">
           <li>
             <a class="link navigation__contact--font" href="mailto:info@devstudio.com"
@@ -297,55 +395,70 @@
         <div class="page-width client">
           <h2 class="section__header section__header--bold">Nasi klienci</h2>
           <div class="client__box">
-            <a class="client__icon">
-              <svg width="106" height="60">
+            <ul class="client__list list">
+              <li class="client__item">
+            <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_1"></use>
               </svg>
             </a>
-            <a class="client__icon">
-              <svg width="106" height="60">
+            </li>
+            <li class="client__item">
+              <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_2"></use>
               </svg>
             </a>
-            <a class="client__icon">
-              <svg width="106" height="60">
+            </li>
+            <li class="client__item">
+            <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_3"></use>
               </svg>
             </a>
-            <a class="client__icon">
-              <svg width="106" height="60">
+            </li>
+            <li class="client__item">
+            <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_4"></use>
               </svg>
             </a>
-            <a class="client__icon">
-              <svg width="106" height="60">
+            </li>
+            <li class="client__item">
+            <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_5"></use>
               </svg>
             </a>
-            <a class="client__icon">
-              <svg width="106" height="60">
+            </li>
+            <li class="client__item">
+            <a class="client__link">
+              <svg class="client__icon" width="170" height="92">
                 <use xlink:href="./images/icons.svg#icon-client_6"></use>
               </svg>
             </a>
+            </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="page-width footer__inner">
-        <div>
+        <div class="footer-contacts">
+          <ul class="list">
+            <li class="footer-contacts__item">
           <a class="logo footer__logo" href="/" title="Strona główna"
             ><span class="logo__name--blue">Web</span>Studio</a
-          >
+          ></li>
           <address>
-            <ul class="list">
-              <li class="address">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
+              <li class="footer-contacts__item address">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer-contacts__item">
                 <a class="footer__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="footer-contacts__item">
                 <a class="footer__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
@@ -355,7 +468,7 @@
         </div>
         <div class="footer__sm footer__sm--margin-left">
           <p class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold">Dołącz do nas</p>
-          <div class="box__sm footer__sm--gap">
+          <div class="footer__sm-icons">
             <a class="icon__sm icon__sm--fill">
               <svg width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -380,7 +493,8 @@
         </div>
         <form>
           <div class="newsletter">
-            <label class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold"">Zapisz się do newslettera<input
+            <p class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold"">Zapisz się do newslettera</p>
+            <label class="newsletter__label"><input
               class="input"
               type="mail"
               name="mail"
@@ -446,23 +560,7 @@
             Wyślij
           </button>
       </div>
-    </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="m-menu__btn-close" type="button" data-menu-close>
-        <svg class="m-menu__icon-close"
-          width="40"
-          height="40"
-        ><use xlink:href="./images/icons.svg#icon-m-close"></use>
-  
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
-      </ul>
-    </div>
+      </div>
     <script defer src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>

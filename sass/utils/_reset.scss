@@ -16,3 +16,25 @@ body {
 li>img {
     vertical-align: top;
 }
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-width {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+@media screen and (min-width: 726px){
+.page-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+}

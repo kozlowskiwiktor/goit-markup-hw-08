@@ -56,56 +56,114 @@ input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-    .newsletter__btn {
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: space-around;
-            padding-inline: 35px;
-            left: 453px;
-            top: 47px;
-        }
+    // .newsletter__btn {
+    //         display: flex;
+    //         position: absolute;
+    //         align-items: center;
+    //         justify-content: space-around;
+    //         padding-inline: 35px;
+    //         left: 453px;
+    //         top: 47px;
+    //     }
     
-        .newsletter {
-            position: relative;
-            max-width: 570px;
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            border: 0;
-            padding: 0;
-            padding-left: 78px;
-        }
+        // .newsletter {
+        //     position: relative;
+        //     max-width: 570px;
+        //     display: flex;
+        //     flex-wrap: nowrap;
+        //     align-items: center;
+        //     border: 0;
+        //     padding: 0;
+        //     padding-left: 78px;
+        // }
     
-        .newsletter label {
-            padding-top: 1em;
-        }
+        // .newsletter label {
+        //     padding-top: 1em;
+        // }
     
         .newsletter input {
-            position: absolute;
-            top: 47px;
-            display: flex;
-            width: 358px;
-            height: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-filter__btn: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            background-color: rgba(0, 0, 0, 0);
+            min-width: 450px;
+            max-width: 600px;
+        //     position: absolute;
+        //     top: 47px;
+        //     display: flex;
+        //     width: 358px;
+        //     height: 50px;
+        //     border: 1px solid rgba(255, 255, 255, 0.3);
+        //     box-filter__btn: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        //     border-radius: 4px;
+        //     background-color: rgba(0, 0, 0, 0);
         }
     
-        input::placeholder {
-            letter-spacing: 0.03em;
-            color: $shadows;
-        }
+        // input::placeholder {
+        //     letter-spacing: 0.03em;
+        //     color: $shadows;
+        // }
     
-        .newsletter input,
-        .newsletter textarea {
-            color: $shadows;
-            padding-left: 16px;
-        }
+        // .newsletter input,
+        // .newsletter textarea {
+        //     color: $shadows;
+        //     padding-left: 16px;
+        // }
     
-        .newsletter textarea:focus,
-        .newsletter input:focus {
-            color: $shadows;
-        }
+        // .newsletter textarea:focus,
+        // .newsletter input:focus {
+        //     color: $shadows;
+        // }
+}
+
+@media screen and (min-width: 1200px) {
+    .newsletter__btn {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-around;
+        padding-inline: 35px;
+        left: 453px;
+        top: 47px;
+    }
+
+    .newsletter {
+        position: relative;
+        max-width: 570px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        border: 0;
+        padding: 0;
+        padding-left: 78px;
+    }
+
+    .newsletter label {
+        padding-top: 1em;
+    }
+
+    .newsletter input {
+        position: absolute;
+        top: 47px;
+        display: flex;
+        width: 358px;
+        min-width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-filter__btn: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    input::placeholder {
+        letter-spacing: 0.03em;
+        color: $shadows;
+    }
+
+    .newsletter input,
+    .newsletter textarea {
+        color: $shadows;
+        padding-left: 16px;
+    }
+
+    .newsletter textarea:focus,
+    .newsletter input:focus {
+        color: $shadows;
+    }
 }

@@ -51,6 +51,46 @@
 }
 .client__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.client__item {
+    display: flex;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+
+    &:hover,
+    &:focus {
+        fill: $main-color;
+        border-color: $main-color;
+        cursor: pointer;
+        transition: fill 250ms $cubic-bezier,
+            border-color 250ms $cubic-bezier;
+    }
+}
+}
+
+@media screen and (min-width: 1200px) {
+.client {
+    padding-top: 94px;
+}
+
+.client__box {
+    display: flex;
+    justify-content: space-around;
+}
+.client__list {
+    display: flex;
     justify-content: space-around;
 }
 

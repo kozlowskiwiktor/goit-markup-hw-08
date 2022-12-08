@@ -1,6 +1,6 @@
 .box__sm {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -22,7 +22,45 @@
     justify-content: center;
     align-items: center;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
+        background-color: $main-color;
+        border-radius: 50%;
+        fill: $primary-color;
+        cursor: pointer;
+        transition: fill 250ms $cubic-bezier,
+            background-color 250ms $cubic-bezier;
+    }
+}
+@media screen and (min-width: 768px) {
+    
+
+.box__sm {
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+    }
+
+    .box__sm--margin {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 30px;
+    }
+
+    .icon__sm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 0;
+        fill: #afb1b8;
+        justify-content: center;
+        align-items: center;
+
+        &:hover,
+        &:focus {
             background-color: $main-color;
             border-radius: 50%;
             fill: $primary-color;
@@ -30,5 +68,43 @@
             transition: fill 250ms $cubic-bezier,
                 background-color 250ms $cubic-bezier;
         }
+    }
 }
+@media screen and (min-width: 1200px) {
 
+
+    .box__sm {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box__sm--margin {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 30px;
+    }
+
+    .icon__sm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 0;
+        fill: #afb1b8;
+        justify-content: center;
+        align-items: center;
+
+        &:hover,
+        &:focus {
+            background-color: $main-color;
+            border-radius: 50%;
+            fill: $primary-color;
+            cursor: pointer;
+            transition: fill 250ms $cubic-bezier,
+                background-color 250ms $cubic-bezier;
+        }
+    }
+}

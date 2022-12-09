@@ -162,6 +162,8 @@ justify-content: center;
 // }
 .footer__newsletter {
     width: 100%;
+    justify-content: center;
+    display: flex;
 }
 
 .footer__inner {
@@ -259,6 +261,7 @@ justify-content: center;
     .footer__inner {
         padding-block: 60px;
         display: flex;
+        justify-content: flex-start;
     }
 
     .footer__inner ul {

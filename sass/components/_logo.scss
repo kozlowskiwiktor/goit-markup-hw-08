@@ -20,4 +20,52 @@
             transition: color 250ms $cubic-bezier;
         }
 }
+@media screen and (min-width: 768px) {
+.logo__name--blue {
+    color: $main-color;
+}
+
+.logo {
+    font-family: $add-font;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo--black {
+    color: $tertiary-color;
+    align-items: baseline;
+    margin-right: 93px;
+
+    &:hover, &:focus, &:visited {
+            color: $tertiary-color;
+            transition: color 250ms $cubic-bezier;
+        }
+}
+}
+@media screen and (min-width: 1200px) {
+.logo__name--blue {
+    color: $main-color;
+}
+
+.logo {
+    font-family: $add-font;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo--black {
+    color: $tertiary-color;
+    align-items: baseline;
+    margin-right: 93px;
+
+    &:hover, &:focus, &:visited {
+            color: $tertiary-color;
+            transition: color 250ms $cubic-bezier;
+        }
+}
+}
 

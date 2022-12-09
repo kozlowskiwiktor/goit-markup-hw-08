@@ -144,14 +144,14 @@
           </svg>
         </button>
         <ul class="navigation__contact list">
-          <li>
+          <li class="navigation__item">
             <a class="link navigation__contact--font" href="mailto:info@devstudio.com"
               ><svg class="icon icon-top" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="link navigation__contact--font" href="tel:+48111111111"
               ><svg class="icon icon-top" width="10" height="16">
                 <use xlink:href="./images/icons.svg#icon-mobile"></use></svg
@@ -163,7 +163,7 @@
     </header>
     <main>
       <div class="slider page-width">
-        <h1 class="slider__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <h1 class="slider__text">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
         <button class="slider__btn" type="button" data-modal-open>
           Zamów usługę
         </button>
@@ -171,7 +171,7 @@
       <section class="section">
         <div class="page-width">
           <ul class="features list">
-            <li>
+            <li class="features__item">
               <div class="features__icon">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -183,7 +183,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <div class="features__icon">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -195,7 +195,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <div class="features__icon">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -207,7 +207,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <div class="features__icon">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -260,7 +260,7 @@
         <div class="page-width">
           <h2 class="section__header section__header--bold">Nasz Zespół</h2>
           <ul class="box list">
-            <li>
+            <li class="team__item">
               <img class="team__img"
                 src="./images/Product_Designer.jpg"
                 srcset="./images/Product_Designer@2x.jpg 2x"
@@ -293,7 +293,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img class="team__img"
               src="./images/Frontend_Developer.jpg"
               srcset="./images/Frontend_Developer@2x.jpg 2x"
@@ -326,10 +326,10 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img class="team__img"
                 src="./images/Marketing.jpg"
-                src="./images/Marketing@2x.jpg 2x"
+                srcset="./images/Marketing@2x.jpg 2x"
                 alt="Zdjęcie profilowe John Doe Marketing"
                 width="270"
                 height="260"
@@ -359,10 +359,10 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img class="team__img"
                 src="./images/UI_Designer.jpg"
-                src="./images/UI_Designer@2x.jpg 2x"
+                srcset="./images/UI_Designer@2x.jpg 2x"
                 alt="Zdjęcie profilowe John Doe UI Designer"
                 width="270"
                 height="260"
@@ -495,7 +495,7 @@
             </a>
           </div>
         </div>
-        <form class="footer_newsletter">
+        <form class="footer__newsletter">
           <div class="newsletter">
             <p class="footer__text footer__text--primary-color footer__text--uppercase footer__text--bold"">Zapisz się do newslettera</p>
             <label class="newsletter__label"><input
@@ -554,11 +554,13 @@
               name="comment"
               placeholder="Wprowadź tekst"></textarea>
           </div>
+          <div class="modal__fieldset">
               <label class="modal__check-policy">
                 <input type="checkbox" class="modal__checkbox">
                 <span><svg width="16" height="15" class="icon icon__checkbox"><use xlink:href="./images/icons.svg#icon-checked"></use></svg>
                Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę prywatności</a></span>
               </label>
+              </div>
         </form>
         <button class="slider__btn modal__btn" type="submit">
             Wyślij

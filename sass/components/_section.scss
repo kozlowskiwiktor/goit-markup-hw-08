@@ -44,3 +44,26 @@
         letter-spacing: 0.03em;
     }
 }
+@media screen and (min-width: 1200px) {
+    .section {
+        width: 100%;
+        align-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding-bottom: 94px;
+        display: flex;
+        gap: calc(10% / 3);
+        justify-content: space-between;
+    }
+    .section__header {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .section__header--bold {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16em;
+        letter-spacing: 0.03em;
+    }
+}

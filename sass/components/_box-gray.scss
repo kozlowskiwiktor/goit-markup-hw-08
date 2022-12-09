@@ -30,6 +30,18 @@
                     600px 0 #f5f4fa, 300px 0 #f5f4fa, 100px 0 #f5f4fa;
         }
     
+}
+@media screen and (min-width: 1200px) {
+    .background-gray {
+            background-color: #f5f4fa;
+            max-width: 100%;
+            padding-top: 94px;
+            margin: 0 auto;
+            flex-direction: column;
+            box-shadow: -600px 0 #f5f4fa, -300px 0 #f5f4fa, -100px 0 #f5f4fa,
+                    600px 0 #f5f4fa, 300px 0 #f5f4fa, 100px 0 #f5f4fa;
+        }
+    
         .background-gray ul {
             margin: 0 auto;
         }

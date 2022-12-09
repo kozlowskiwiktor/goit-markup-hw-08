@@ -57,8 +57,8 @@
     position: absolute;
     background-color: #fff;
     border: none;
-    right: 10px;
-    top: 10px;
+    right: 25px;
+    top: 21px;
     cursor: pointer;
     transition: fill $cubic-bezier;
 
@@ -146,7 +146,6 @@
         display: none;
     }
     
-
     .m-menu-btn {
         display: none;
     }

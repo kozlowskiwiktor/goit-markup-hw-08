@@ -32,11 +32,6 @@ li>img {
 }
 
 @media screen and (min-width: 768px){
-.page-width {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 .box {
     flex-wrap: wrap;
     flex-direction: row;
@@ -45,9 +40,8 @@ li>img {
 
 @media screen and (min-width: 1200px) {
     .page-width {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
+        padding-left: 0;
+            padding-right: 0;
         }
     
         .box {

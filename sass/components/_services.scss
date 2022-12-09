@@ -2,6 +2,9 @@
     display: none;
 }
 @media screen and (min-width: 1200px) {
+.services {
+        display: block;
+    }
 
 .services__img {
     position: relative;

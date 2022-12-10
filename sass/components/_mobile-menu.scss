@@ -36,6 +36,7 @@
 
 .m-menu {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     padding: 48px 40px;
     width: 100%;
@@ -45,6 +46,7 @@
     opacity: 1;
     background-color: #fff;
     z-index: 998;
+    overflow: scroll;
 }
 
 .m-menu__list-nav {
